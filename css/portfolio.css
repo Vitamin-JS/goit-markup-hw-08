@@ -119,8 +119,24 @@ body {
 
 /* Отступы лого */
 .logo-font {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 481px) {
+  .logo-font {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo-font {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
 }
 
 /* Обнуление отступа <p>-лого  */
@@ -130,12 +146,26 @@ body {
 
 /* Отступы Навигация контакты */
 .nav-contacts {
-  margin-left: auto;
-  padding: 0;
+  display: none;
 }
 
-.nav-contacts > li:first-child {
-  margin-right: 30px;
+@media screen and (min-width: 481px) {
+  .nav-contacts {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-contacts {
+    margin-left: auto;
+    padding: 0;
+  }
+  .nav-contacts > li:first-child {
+    margin-right: 30px;
+  }
 }
 
 /* Шрифт в навигации */
@@ -147,11 +177,22 @@ body {
 }
 
 /* Свойства блока хедер */
-.header-menu,
-.nav-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 481px) {
+  .header-menu,
+  .nav-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 769px) {
+  .nav-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /* Отступы меню навигации */
