@@ -1,0 +1,205 @@
+/* ==================================Стили Футера ============================== */
+footer {
+  height: 253px;
+}
+.logo-font-footer {
+  display: inline-block;
+  font-size: 22px;
+}
+
+/* ===============Заголовки белым цветом */
+.white-text {
+  color: $white-bg-color;
+}
+
+.footer-bg {
+  background-color: $footer-bg-color;
+}
+
+/* Стили адреса футера */
+.address-footer {
+  color: $white-bg-color;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.contacts-footer {
+  color: $footer-contacts-color;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Отступы спика контактов футера UL */
+.footer-address-ul {
+  padding: 0;
+  min-width: 231px;
+}
+
+.footer-address-list:not(:first-child) {
+  margin-top: 9px;
+}
+
+/* Флекс бокс всего футера */
+.footer-flexBox {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 18px;
+}
+/* Флекс бокс блока ссылок и заголовка=======Блок ссылок===== */
+.footerLinks-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  width: 207px;
+  padding-top: 56px;
+}
+/* Флекс бокс тайтл */
+.footerTitle-box {
+  display: flex;
+}
+
+/* Список UL ссылок */
+.links-list {
+  display: flex;
+  padding: 0;
+}
+
+/* Стили заголовков футера */
+.footer-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 21px;
+  display: block;
+}
+/* Лого футера -  отступы*/
+.logo-font-footer > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Стили ссылок на соц.сети в футере  */
+.footerSocialLinks {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color-blue;
+  }
+}
+
+// .footerSocialLinks:hover,
+// .footerSocialLinks:focus {
+//   background-color: var(--accent-color-blue);
+// }
+
+/* Стили svg иконок */
+.footer-icons {
+  fill: $white-bg-color;
+}
+
+/* Отступы  справа соц.ссылок футера */
+.footer-social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Отступы поля форма футер === Блок Форма======== */
+/* Отступы блока Форма */
+.footerMail-box {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+/* Стили поля e-mail */
+.input-email {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 18px 12px;
+}
+
+/* Стили кнопки в футере */
+.footer .button {
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  text-decoration: none;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.footer .button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(/images/telegram.svg);
+  background-size: contain;
+}
+/*  Нижняя надпись */
+.madeByStudents {
+  color: $made-by-studentsGoIT;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Фокус для лого ===НЕ РАБОТАЕТ ФОКУС ЛОГО ФУТЕРА */
+.focus-text:focus,
+.white-text .logo-font-footer:focus {
+  color: $accent-color-blue;
+}
+
+// .button {
+//   color: $white-bg-color;
+//   background-color: $accent-color-blue;
+//   border: none;
+//   cursor: pointer;
+
+//   &:focus {
+//     box-shadow: 0px 0px 2px 4px #e7e7e7;
+//     font-size: 18px;
+//   }
+// }

@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 1200px;
+  }
+  // max-width: 1600px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $white-bg-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+
+/* Общие стили контейнера */
+.container {
+  // width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 481px) {
+    width: 738px;
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 1170px;
+  }
+}
+
+/* Стили изображений без лишних отступов */
+.image-block {
+  display: block;
+  max-width: 100%;
+}
+
+.logo {
+  color: $secondary-text-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-blue {
+    color: $accent-color-blue;
+  }
+}
+
+// /* Синий цвет лого */
+// .logo-blue {
+//   color: $accent-color-blue;
+// }
+
+/* Шрифт лого в навгации и футере */
+.logo-font,
+.logo-font-footer {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03pc;
+}
+
+.button {
+  color: $white-bg-color;
+  background-color: $accent-color-blue;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: 0px 0px 2px 4px #e7e7e7;
+    font-size: 18px;
+  }
+}

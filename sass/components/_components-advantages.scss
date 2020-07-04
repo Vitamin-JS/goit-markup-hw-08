@@ -1,0 +1,58 @@
+/* ================================Свойства блока Преимущества====================== */
+/* Отступы блока Преимущества */
+.advatn {
+  padding: 0;
+  display: flex;
+
+  /* Падинги всей секции */
+  &-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+/* Падинги всей секции */
+// .advant-section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+/* Свойства SVG иконок */
+.advant-svg {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: var(--gray-bg-color);
+  border-radius: 4px;
+}
+
+.advant-list {
+  width: calc((1170px - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+// .advant-list:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+/* Стили текста заголовка секции Преимущества */
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+/* Стили блока Преимущества */
+.text-advetages {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin: 0;
+}

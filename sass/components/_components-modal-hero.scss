@@ -1,0 +1,289 @@
+/* ===============================Модальное окно в Герое=========================== */
+
+/* Фон модалки  */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 35, 48, 0.7);
+
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+  z-index: 999;
+
+  /* Скрытие модалки */
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    /* Состояние окна формы при включенном is-hidden */
+    & .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+}
+
+/* Скрытие модалки */
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+/* Состояние окна формы при включенном is-hidden */
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(0.9);
+// }
+
+/* Стили окна формы */
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  max-height: 800px;
+  min-height: 400px;
+  width: 528px;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 200ms ease-in;
+  /* Переход ======================================= */
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  align-items: center;
+}
+
+/* Стили тега формы */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Стили блоков инпут */
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+  height: 40px;
+}
+/* Св-ва кнопки Закрыть Модального окна */
+.modal-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  right: 8px;
+  top: 8px;
+  background-image: url(../images/images-for-modal/close-black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Св-ва заголовка Модального окна */
+.modal-title {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Cв-ва поля инпут Имя, Телефон, почта */
+.input-area {
+  width: 100%;
+  height: 40px;
+  padding: 0px 0px 0px 42px;
+
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стили меток Label и позиционирование на поле инпут */
+.form-label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Анимация меток Label */
+.input-area:focus + .form-label,
+.input-area:not(:placeholder-shown) + .form-label {
+  /* transform: translateY(-40px); */
+  transform: translate(-26px, -40px);
+  color: $accent-color-blue;
+}
+
+/* Анимация бордера инпутов */
+.input-area:focus,
+.input-area:not(:placeholder-shown) {
+  border: 1px solid $accent-color-blue;
+  outline: $accent-color-blue;
+}
+
+/* Размер поля комментария */
+textarea {
+  width: 100%;
+  resize: none;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Позиционирование блока с комментариями */
+.form-comment {
+  position: relative;
+}
+
+/* Стили поля ввода комментария */
+.comment {
+  padding: 12px 16px;
+}
+
+/* Стили метки Label в поле с комментариями */
+.comment-label {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Анимация метки label поля комментарий */
+.comment:focus + .comment-label,
+.comment:not(:placeholder-shown) + .comment-label {
+  transform: translateY(-30px);
+  color: $accent-color-blue;
+}
+
+/* Анимация бордера поля комменарий Модального окна */
+.comment:focus,
+.comment:not(:placeholder-shown) {
+  border: 1px solid $accent-color-blue;
+  outline: $accent-color-blue;
+}
+
+/* Стили поля Условия Договора */
+.policy-field {
+  position: relative;
+  margin-bottom: 30px;
+  height: 24px;
+}
+/* Стили текста чекбокса */
+.policy-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Стили ссылки в текстк Чекбокса */
+.policy-link {
+  color: $accent-color-blue;
+}
+
+/* Пробел в тексте */
+.space {
+  color: rgba(0, 0, 0, 0);
+}
+
+/* Стили кнопки Отправить Модального окна  */
+.modal-button {
+  height: 50px;
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 0;
+  background-color: $accent-color-blue;
+  color: $white-bg-color;
+  cursor: pointer;
+}
+
+/* Стили иконок инпутов Модального окна */
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Анимация иконок SVG */
+.input-area:focus ~ span > .modal-icon,
+.input-area:not(:placeholder-shown) ~ span > .modal-icon {
+  fill: $accent-color-blue;
+}
+
+/* Стили Чекбокса */
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &-icon {
+    /* Стили иконки чекбокса спана */
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-left: 12px;
+    margin-right: 8px;
+    border: 2px solid $secondary-text-color;
+    border-radius: 4px;
+  }
+}
+
+/* Стили иконки чекбокса спана */
+// .checkbox-icon {
+//   display: inline-block;
+//   width: 16px;
+//   height: 15px;
+//   margin-left: 12px;
+//   margin-right: 8px;
+//   border: 2px solid var(--secondary-text-color);
+//   border-radius: 4px;
+// }
+
+/* Стили иконки Чекбокса при состоянии Чекд */
+.checkbox:checked + .checkbox-icon {
+  background-color: $accent-color-blue;
+  border: none;
+  background-image: url(../images/images-for-modal/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-position: center;
+}

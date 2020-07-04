@@ -1,0 +1,58 @@
+/*=============================== Стиль секции Чем мы занимаемся================= */
+
+/* Стили заголовка ЧМЗ */
+.whatWeDo .logo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Стили текста видов работ ЧМЗ  и цвет бэкграунда*/
+.whatWeDo-text {
+  position: absolute;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $wtah-we-do-bg;
+  width: calc((1170px - 60px) / 3);
+  transform: translateY(-100%);
+  z-index: 2;
+}
+
+/* Отступы UL блока Чем мы занимаемся */
+.whatWeDo-ul {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+/* Размеры списка работ */
+.whatWeDo-list {
+  position: relative;
+  width: calc((1170px - 60px) / 3);
+  z-index: 1;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+// .whatWeDo-list:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+/* Верхний падинг для всей секции */
+.whatWeDo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

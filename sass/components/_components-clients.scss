@@ -1,0 +1,98 @@
+/* ============================Стили секции Постоянные клиенты====================== */
+/* Флекс бокс заголовка  */
+.clientsTitle-box {
+  display: flex;
+  width: 1170px;
+  justify-content: center;
+}
+/* Флекс бокс списка компаний */
+.clients-box {
+  display: flex;
+  justify-content: center;
+}
+
+/* Отступы заголовка Постоянные клиенты */
+.clients .logo {
+  font-size: 36px;
+  line-height: 1.17;
+  margin: 0 0 50px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стили списка пост. клиенты */
+.compani-list {
+  padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили списка li */
+.clients-list {
+  width: 170px;
+  height: 90px;
+}
+
+/* Стили ссылки на компании Пост. клиентов */
+.clients-link {
+  display: inline-block;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  height: 90px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Ховер на ссылку Клиентов */
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color-blue;
+  }
+}
+// /* Размеры ссылок клиентов */
+// .clients-link {
+//   width: 170px;
+//   height: 90px;
+// }
+
+// /* Ховер на ссылку Клиентов */
+// .clients-link:hover,
+// .clients-link:focus {
+//   border: 1px solid var(--accent-color-blue);
+// }
+
+/* Стили SVG иконок */
+.icon-client {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
+  &:hover {
+    fill: $accent-color-blue;
+  }
+}
+
+/* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
+// .icon-client:hover {
+//   fill: var(--accent-color-blue);
+// }
+
+/* Правый отступ списка компаний */
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Отсупы всей секции */
+.clients {
+  padding-top: 120px;
+  padding-bottom: 94px;
+}

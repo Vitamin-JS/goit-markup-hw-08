@@ -1,0 +1,115 @@
+/* =============================Стили секции Наша команда=========================== */
+
+/* Отступы всей секци Наша команда */
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $gray-bg-color;
+}
+
+/* Стили Наша команда заголовок */
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team .logo {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.proffesion {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Обнуление отступов списка UL */
+.our-team {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+
+/* Отступы списка членов команды */
+.team-list {
+  display: inline-block;
+  width: 274px;
+  background-color: $white-bg-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  /* Отступы имен членов команды */
+  & .logo {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  /* Отступы от фото команды */
+  & .image-block {
+    margin-bottom: 30px;
+  }
+}
+
+/* Отступы профессий членов команды */
+.proffesion {
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+/* Стили соц сетей команды */
+.our-team-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
+
+  /* Правый отступ между иконками соцсетей */
+  & > li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+/* Правый марджин нашей команды */
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Стили ссылок на соцсети + SVG */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #afb1b8; /* --- цвет иконок в ссылках---*/
+  fill: currentColor;
+  border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Hover и Focus для иконок соцсетей */
+  &:hover,
+  &:focus {
+    fill: $white-bg-color;
+    background-color: $accent-color-blue;
+  }
+}
+
+/* Пример - было в отдельных классах - внес внутрь через & - Hover и Focus для иконок соцсетей */
+// .social-links:hover,
+// .social-links:focus {
+//   fill: var(--white-bg-color);
+//   background-color: var(--accent-color-blue);
+// }
