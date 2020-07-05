@@ -3,6 +3,8 @@
 .hero {
   @media screen and (max-width: 480px) {
     max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 
     /* Стили заголовка Героя */
     &-title {
@@ -18,6 +20,8 @@
 
   @media screen and (min-width: 481px) {
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
 
     /* Стили заголовка Героя */
     &-title {
@@ -33,6 +37,8 @@
 
   @media screen and (min-width: 769px) {
     max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 
     /* Стили заголовка Героя */
     &-title {
