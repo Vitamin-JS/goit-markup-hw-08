@@ -75,8 +75,15 @@
 
 /* Отступы меню навигации */
 .header-menu {
-  margin-left: 85px;
-  padding: 0;
+  @media screen and (min-width: 481px) {
+    margin-left: 81px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    margin-left: 85px;
+    padding: 0;
+  }
 }
 
 .nav-list {
