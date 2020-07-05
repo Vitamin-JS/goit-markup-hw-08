@@ -1,23 +1,32 @@
 /* ============================Стили секции Постоянные клиенты====================== */
 /* Флекс бокс заголовка  */
-.clientsTitle-box {
-  display: flex;
-  width: 1170px;
-  justify-content: center;
-}
+// .clientsTitle-box {
+//   display: flex;
+//   width: 1170px;
+//   justify-content: center;
+// }
 /* Флекс бокс списка компаний */
-.clients-box {
-  display: flex;
-  justify-content: center;
-}
+// .clients-box {
+//   display: flex;
+//   justify-content: center;
+// }
 
 /* Отступы заголовка Постоянные клиенты */
 .clients .logo {
-  font-size: 36px;
-  line-height: 1.17;
-  margin: 0 0 50px;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin: 0 0 30px;
+  }
+
+  @media screen and (min-width: 769px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin: 0 0 50px;
+  }
 }
 
 /* Стили списка пост. клиенты */
