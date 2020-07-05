@@ -2,9 +2,18 @@
 
 /* Отступы всей секци Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $gray-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-color: $white-bg-color;
+  }
+
+  @media screen and(min-width:769px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* Стили Наша команда заголовок */
@@ -46,15 +55,43 @@
   margin: 0;
   display: flex;
   text-align: center;
+
+  @media screen and(max-width: 480px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 481px) {
+    flex-wrap: wrap;
+  }
 }
 
 /* Отступы списка членов команды */
 .team-list {
   display: inline-block;
-  width: 274px;
   background-color: $white-bg-color;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 354px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
   /* Отступы имен членов команды */
   & .logo {
@@ -88,11 +125,6 @@
   & > li:not(:last-child) {
     margin-right: 10px;
   }
-}
-
-/* Правый марджин нашей команды */
-.team-list:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* Стили ссылок на соцсети + SVG */
