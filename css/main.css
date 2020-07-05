@@ -973,7 +973,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .our-team {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -999,9 +999,12 @@ textarea {
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .team-list {
     width: 354px;
+  }
+  .team-list:nth-child(-n + 2) {
+    margin-bottom: 30px;
   }
   .team-list:nth-child(2n + 1) {
     margin-right: 30px;
