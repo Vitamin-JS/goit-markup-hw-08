@@ -1,14 +1,25 @@
 /*=============================== Стиль секции Чем мы занимаемся================= */
 
+/* Верхний падинг для всей секции */
+.whatWeDo {
+  display: none;
+
+  @media screen and (min-width: 769px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Стили заголовка ЧМЗ */
 .whatWeDo .logo {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
-  text-align: center;
 }
 
 /* Стили текста видов работ ЧМЗ  и цвет бэкграунда*/
@@ -50,9 +61,3 @@
 // .whatWeDo-list:not(:last-child) {
 //   margin-right: 30px;
 // }
-
-/* Верхний падинг для всей секции */
-.whatWeDo {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}

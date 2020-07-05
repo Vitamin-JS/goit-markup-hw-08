@@ -9,13 +9,22 @@
 
 /* Стили Наша команда заголовок */
 .team-title {
-  font-size: 36px;
-  line-height: 1.17;
   margin-top: 0;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   letter-spacing: 0.03em;
+
+  @media screen {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 769px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .our-team .logo {
