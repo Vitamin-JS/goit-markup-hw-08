@@ -69,12 +69,27 @@
 
 /* Герой флекс свойства контейнера */
 .hero-box {
-  max-width: 1600px;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 481px) {
+    max-width: 768px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 769px) {
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
   background-color: rgba(47, 48, 58, 0.8);
   background-image: linear-gradient(
       to right,

@@ -378,7 +378,6 @@ body {
 
 /* Герой флекс свойства контейнера */
 .hero-box {
-  max-width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,11 +388,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
   background-color: rgba(47, 48, 58, 0.8);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-bg.jpg);
+}
+
+@media screen and (max-width: 480px) {
+  .hero-box {
+    max-width: 480px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero-box {
+    max-width: 768px;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero-box {
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 /* ===============================Модальное окно в Герое=========================== */
