@@ -11,6 +11,7 @@
 
   @media screen and(min-width: 481px) {
     display: flex;
+    flex-wrap: wrap;
 
     /* Падинги всей секции */
     &-section {
@@ -28,30 +29,54 @@
     }
   }
 }
-
-/* Свойства SVG иконок */
-.advant-svg {
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: var(--gray-bg-color);
-  border-radius: 4px;
-  background-color: $gray-bg-color;
-}
-
+// Стили списка преимуществ li
 .advant-list {
-  width: calc((1170px - 90px) / 4);
+  @media screen and (max-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 481px) {
+    width: calc((738px - 30px) / 2);
+    margin-bottom: 30px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    width: calc((1170px - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 // .advant-list:not(:last-child) {
 //   margin-right: 30px;
 // }
+
+/* Свойства SVG иконок */
+.advant-svg {
+  width: 450px;
+  padding: 25px 190px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $gray-bg-color;
+
+  @media screen and (min-width: 481px) {
+    width: 354px;
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 270px;
+    padding: 25px 100px;
+  }
+}
 
 /* Стили текста заголовка секции Преимущества */
 .title {

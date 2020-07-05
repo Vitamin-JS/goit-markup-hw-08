@@ -320,7 +320,7 @@ body {
     color: #ffffff;
     font-weight: 900;
     font-size: 26px;
-    line-height: 1.6;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
   }
@@ -404,7 +404,7 @@ body {
 
 @media screen and (min-width: 481px) {
   .hero-box {
-    max-width: 768px;
+    width: 768px;
     padding-bottom: 118px;
     padding-top: 118px;
   }
@@ -412,7 +412,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .hero-box {
-    max-width: 1600px;
+    width: 1600px;
     padding-bottom: 200px;
     padding-top: 200px;
   }
@@ -738,6 +738,8 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     /* Падинги всей секции */
   }
   .advant-section {
@@ -759,24 +761,52 @@ textarea {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .advant-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .advant-list {
+    width: calc((738px - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  .advant-list:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .advant-list {
+    width: calc((1170px - 90px) / 4);
+  }
+  .advant-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 /* Свойства SVG иконок */
 .advant-svg {
+  width: 450px;
+  padding: 25px 190px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: var(--gray-bg-color);
   border-radius: 4px;
   background-color: #f5f4fa;
 }
 
-.advant-list {
-  width: calc((1170px - 90px) / 4);
+@media screen and (min-width: 481px) {
+  .advant-svg {
+    width: 354px;
+    padding: 25px 142px;
+  }
 }
 
-.advant-list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 769px) {
+  .advant-svg {
+    width: 270px;
+    padding: 25px 100px;
+  }
 }
 
 /* Стили текста заголовка секции Преимущества */
