@@ -56,6 +56,7 @@ body {
 
 /* Общие стили контейнера */
 .container {
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -722,20 +723,42 @@ textarea {
 
 /* ================================Свойства блока Преимущества====================== */
 /* Отступы блока Преимущества */
-.advatn {
+.advant {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   /* Падинги всей секции */
 }
 
-.advatn-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.advant-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-/* Падинги всей секции */
+@media screen and (min-width: 481px) {
+  .advant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Падинги всей секции */
+  }
+  .advant-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .advant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Падинги всей секции */
+  }
+  .advant-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 /* Свойства SVG иконок */
 .advant-svg {
   margin-bottom: 30px;
@@ -745,6 +768,7 @@ textarea {
   padding-right: 100px;
   background-color: var(--gray-bg-color);
   border-radius: 4px;
+  background-color: #f5f4fa;
 }
 
 .advant-list {

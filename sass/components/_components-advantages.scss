@@ -1,20 +1,33 @@
 /* ================================Свойства блока Преимущества====================== */
 /* Отступы блока Преимущества */
-.advatn {
+.advant {
   padding: 0;
-  display: flex;
 
   /* Падинги всей секции */
   &-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and(min-width: 481px) {
+    display: flex;
+
+    /* Падинги всей секции */
+    &-section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  @media screen and(min-width: 769px) {
+    display: flex;
+
+    /* Падинги всей секции */
+    &-section {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
 }
-/* Падинги всей секции */
-// .advant-section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
 
 /* Свойства SVG иконок */
 .advant-svg {
@@ -25,6 +38,7 @@
   padding-right: 100px;
   background-color: var(--gray-bg-color);
   border-radius: 4px;
+  background-color: $gray-bg-color;
 }
 
 .advant-list {
