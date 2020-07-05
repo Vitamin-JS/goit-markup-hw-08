@@ -46,7 +46,7 @@
   }
 }
 
-/* Шрифт в навигации */
+/* Шрифт в навигации ========РАЗНЫЕ ШРИФТЫ в разных девайсах*/
 .nav-font {
   font-weight: 500;
   font-size: 14px;
@@ -57,6 +57,10 @@
 /* Свойства блока хедер */
 .header-menu,
 .nav-contacts {
+  @media screen and (max-width: 481px) {
+    display: none;
+  }
+
   @media screen and (min-width: 481px) {
     display: flex;
     // flex-direction: column;

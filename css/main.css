@@ -168,7 +168,7 @@ body {
   }
 }
 
-/* Шрифт в навигации */
+/* Шрифт в навигации ========РАЗНЫЕ ШРИФТЫ в разных девайсах*/
 .nav-font {
   font-weight: 500;
   font-size: 14px;
@@ -177,6 +177,13 @@ body {
 }
 
 /* Свойства блока хедер */
+@media screen and (max-width: 481px) {
+  .header-menu,
+  .nav-contacts {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 481px) {
   .header-menu,
   .nav-contacts {
