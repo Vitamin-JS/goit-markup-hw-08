@@ -96,12 +96,24 @@ body {
 }
 
 /* Шрифт лого в навгации и футере */
-.logo-font,
-.logo-font-footer {
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03pc;
+@media screen and (max-width: 768px) {
+  .logo-font,
+  .logo-font-footer {
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03pc;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo-font,
+  .logo-font-footer {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03pc;
+  }
 }
 
 .button {
@@ -297,19 +309,52 @@ body {
 }
 
 /* ==========================Стили для  секции Герой=========================== */
-.hero {
-  max-width: 1600px;
-  /* Стили заголовка Героя */
+@media screen and (max-width: 480px) {
+  .hero {
+    max-width: 480px;
+    /* Стили заголовка Героя */
+  }
+  .hero-title {
+    margin: 0 0 30px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 
-.hero-title {
-  margin: 0 0 30px;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
+@media screen and (min-width: 481px) {
+  .hero {
+    max-width: 768px;
+    /* Стили заголовка Героя */
+  }
+  .hero-title {
+    margin: 0 0 30px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    max-width: 1600px;
+    /* Стили заголовка Героя */
+  }
+  .hero-title {
+    margin: 0 0 30px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }
 
 /* Стиль кнопки героя */

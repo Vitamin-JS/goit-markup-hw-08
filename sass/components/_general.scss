@@ -77,10 +77,19 @@ body {
 /* Шрифт лого в навгации и футере */
 .logo-font,
 .logo-font-footer {
-  font-family: Raleway, sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03pc;
+  @media screen and (max-width: 768px) {
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03pc;
+  }
+
+  @media screen and (min-width: 769px) {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03pc;
+  }
 }
 
 .button {
