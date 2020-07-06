@@ -1,15 +1,4 @@
 /* ============================Стили секции Постоянные клиенты====================== */
-/* Флекс бокс заголовка  */
-// .clientsTitle-box {
-//   display: flex;
-//   width: 1170px;
-//   justify-content: center;
-// }
-/* Флекс бокс списка компаний */
-// .clients-box {
-//   display: flex;
-//   justify-content: center;
-// }
 
 /* Отступы заголовка Постоянные клиенты */
 .clients .logo {
@@ -43,38 +32,52 @@
     margin-right: 30px;
   }
 
-  @media screen and(max-width:
-   480px) {
+  @media screen and(max-width: 768px) {
     flex-wrap: wrap;
   }
 }
 
 /* Стили списка li */
 .clients-list {
-  width: 210px;
   height: 90px;
 
   /* Нижний отступ списка компаний у 4х первых элементов Li - Mobile */
-  @media screen and(max-width: 480px) {
+  @media screen and (max-width: 480px) {
+    width: 210px;
+
     &:nth-child(-n + 4) {
       margin-bottom: 30px;
     }
+  }
 
-    @media screen and(min-width: 769px) {
-      width: 170px;
-      height: 90px;
+  @media screen and (min-width: 481px) {
+    width: 226px;
+
+    &:nth-child(-n + 3) {
+      margin-bottom: 30px;
     }
   }
 
-  /* Стили ссылки на компании Пост. клиентов */
-  .clients-link {
-    display: inline-block;
-    border: 1px solid #afb1b8;
-    border-radius: 5px;
-    margin: 0;
-    padding: 0;
+  @media screen and (min-width: 769px) {
+    width: 170px;
+  }
+}
+
+/* Стили ссылки на компании Пост. клиентов */
+.clients-link {
+  display: inline-block;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  height: 90px;
+
+  @media screen and (max-width: 480px) {
     width: 210px;
-    height: 90px;
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 226px;
   }
 
   @media screen and(min-width: 769px) {
