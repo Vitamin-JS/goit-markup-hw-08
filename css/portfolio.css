@@ -563,7 +563,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -667,9 +667,30 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 69px;
-  width: 207px;
-  padding-top: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .footerLinks-box {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footerLinks-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 69px;
+    width: 207px;
+    padding-top: 56px;
+  }
 }
 
 /* Флекс бокс тайтл */
@@ -689,12 +710,25 @@ footer {
 
 /* Стили заголовков футера */
 .footer-title {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 21px;
-  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 21px;
+    display: block;
+  }
 }
 
 /* Лого футера -  отступы*/
