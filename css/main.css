@@ -1126,23 +1126,26 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Правый отступ списка компаний */
+}
+
+.compani-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .compani-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 /* Стили списка li */
 .clients-list {
-  width: 170px;
+  width: 210px;
   height: 90px;
-}
-
-/* Стили ссылки на компании Пост. клиентов */
-.clients-link {
-  display: inline-block;
-  border: 1px solid #afb1b8;
-  border-radius: 5px;
-  margin: 0;
-  padding: 0;
-  width: 170px;
-  height: 90px;
+  /* Нижний отступ списка компаний у 4х первых элементов Li - Mobile */
+  /* Стили ссылки на компании Пост. клиентов */
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -1152,7 +1155,36 @@ textarea {
   /* Ховер на ссылку Клиентов */
 }
 
-.clients-link:hover, .clients-link:focus {
+@media screen and (max-width: 480px) {
+  .clients-list:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 769px) {
+  .clients-list {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+.clients-list .clients-link {
+  display: inline-block;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  height: 90px;
+}
+
+@media screen and (min-width: 769px) {
+  .clients-list {
+    width: 170px;
+  }
+}
+
+.clients-list:hover, .clients-list:focus {
   border: 1px solid #2196f3;
 }
 
@@ -1173,11 +1205,6 @@ textarea {
 }
 
 /* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
-/* Правый отступ списка компаний */
-.clients-list:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Отсупы всей секции */
 .clients {
   padding-top: 120px;
