@@ -20,11 +20,6 @@
   margin: 0;
 }
 
-// /* Навигвция правый отступ контакты -- Пример CSS */
-// .nav-contacts > li:first-child {
-//   margin-right: 30px;
-// }
-
 /* Отступы Навигация контакты */
 .nav-contacts {
   display: none;
@@ -34,6 +29,10 @@
     margin-bottom: 21px;
     margin-left: auto;
     padding: 0;
+
+    & > li:first-child {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (min-width: 769px) {

@@ -167,6 +167,9 @@ body {
     margin-left: auto;
     padding: 0;
   }
+  .nav-contacts > li:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 769px) {

@@ -167,6 +167,9 @@ body {
     margin-left: auto;
     padding: 0;
   }
+  .nav-contacts > li:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -1207,8 +1210,15 @@ textarea {
 /* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
 /* Отсупы всей секции */
 .clients {
-  padding-top: 120px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 769px) {
+  .clients {
+    padding-top: 120px;
+    padding-bottom: 94px;
+  }
 }
 
 /* ==================================Стили Футера ============================== */
