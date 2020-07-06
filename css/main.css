@@ -1226,7 +1226,6 @@ textarea {
   fill: #2196f3;
 }
 
-/* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
 /* Отсупы всей секции */
 .clients {
   padding-top: 60px;
@@ -1242,12 +1241,42 @@ textarea {
 
 /* ==================================Стили Футера ============================== */
 footer {
-  height: 253px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-font-footer {
   display: inline-block;
-  font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+  .logo-font-footer {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo-font-footer {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-addressBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 60px;
+  }
 }
 
 /* ===============Заголовки белым цветом */
@@ -1265,10 +1294,9 @@ footer {
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   display: inline-block;
-  margin-top: 10px;
 }
 
 .contacts-footer {
@@ -1282,13 +1310,37 @@ footer {
 }
 
 /* Отступы спика контактов футера UL */
-.footer-address-ul {
-  padding: 0;
-  min-width: 231px;
+@media screen and (max-width: 480px) {
+  .footer-address-ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.footer-address-list:not(:first-child) {
-  margin-top: 9px;
+@media screen and (min-width: 769px) {
+  .footer-address-ul {
+    padding: 0;
+    min-width: 231px;
+  }
+}
+
+.footer-address-list:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 769px) {
+  .footer-address-list:not(:last-child) {
+    margin-top: 9px;
+  }
 }
 
 /* Флекс бокс всего футера */
@@ -1296,12 +1348,26 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-bottom: 28px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-flexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-flexBox {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 18px;
+  }
 }
 
 /* Флекс бокс блока ссылок и заголовка=======Блок ссылок===== */

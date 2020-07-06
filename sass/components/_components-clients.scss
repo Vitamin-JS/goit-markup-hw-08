@@ -95,12 +95,6 @@
   }
 }
 
-// /* Ховер на ссылку Клиентов */
-// .clients-link:hover,
-// .clients-link:focus {
-//   border: 1px solid var(--accent-color-blue);
-// }
-
 /* Стили SVG иконок */
 .icon-client {
   fill: #afb1b8;
@@ -113,11 +107,6 @@
     fill: $accent-color-blue;
   }
 }
-
-/* Hover для иконок клиентов ===НЕ РАБОТАЕТ ФОКУС НА ИКОНКАХ SVG*/
-// .icon-client:hover {
-//   fill: var(--accent-color-blue);
-// }
 
 /* Отсупы всей секции */
 .clients {
