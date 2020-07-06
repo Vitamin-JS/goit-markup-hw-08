@@ -1365,7 +1365,6 @@ footer {
         -ms-flex-align: baseline;
             align-items: baseline;
     padding-bottom: 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 18px;
   }
 }
@@ -1430,6 +1429,7 @@ footer {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
+    font-weight: 500;
   }
 }
 
@@ -1488,8 +1488,26 @@ footer {
 
 /* Отступы поля форма футер === Блок Форма======== */
 /* Отступы блока Форма */
-.footerMail-box {
-  margin-left: 93px;
+@media screen and (max-width: 480px) {
+  .footerMail-box {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footerMail-box {
+    margin-left: 93px;
+  }
 }
 
 .footer-form {
@@ -1498,9 +1516,20 @@ footer {
   display: flex;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /* Стили поля e-mail */
 .input-email {
-  width: 358px;
   height: 50px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1514,6 +1543,19 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding: 18px 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .input-email {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .input-email {
+    width: 358px;
+  }
 }
 
 /* Стили кнопки в футере */
@@ -1547,16 +1589,6 @@ footer {
   margin-left: 10px;
   background-image: url(/images/telegram.svg);
   background-size: contain;
-}
-
-/*  Нижняя надпись */
-.madeByStudents {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin: 0;
 }
 
 /* Фокус для лого ===НЕ РАБОТАЕТ ФОКУС ЛОГО ФУТЕРА */

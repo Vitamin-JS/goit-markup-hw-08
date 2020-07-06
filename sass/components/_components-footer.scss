@@ -94,7 +94,6 @@ footer {
   @media screen and (min-width: 769px) {
     align-items: baseline;
     padding-bottom: 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 18px;
   }
 }
@@ -135,6 +134,7 @@ footer {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
+    font-weight: 500;
   }
 
   @media screen and (min-width: 769px) {
@@ -188,15 +188,28 @@ footer {
 /* Отступы поля форма футер === Блок Форма======== */
 /* Отступы блока Форма */
 .footerMail-box {
-  margin-left: 93px;
+  @media screen and (max-width: 480px) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 769px) {
+    margin-left: 93px;
+  }
 }
 
 .footer-form {
   display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* Стили поля e-mail */
 .input-email {
-  width: 358px;
   height: 50px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -208,6 +221,15 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding: 18px 12px;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 358px;
+  }
 }
 
 /* Стили кнопки в футере */
@@ -237,30 +259,9 @@ footer {
   background-image: url(/images/telegram.svg);
   background-size: contain;
 }
-/*  Нижняя надпись */
-.madeByStudents {
-  color: $made-by-studentsGoIT;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin: 0;
-}
 
 /* Фокус для лого ===НЕ РАБОТАЕТ ФОКУС ЛОГО ФУТЕРА */
 .focus-text:focus,
 .white-text .logo-font-footer:focus {
   color: $accent-color-blue;
 }
-
-// .button {
-//   color: $white-bg-color;
-//   background-color: $accent-color-blue;
-//   border: none;
-//   cursor: pointer;
-
-//   &:focus {
-//     box-shadow: 0px 0px 2px 4px #e7e7e7;
-//     font-size: 18px;
-//   }
-// }
