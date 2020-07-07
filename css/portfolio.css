@@ -533,11 +533,44 @@ footer {
   padding-bottom: 60px;
 }
 
+/* Флекс бокс всего футера */
+.footer-flexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-flexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-flexBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-flexBox {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-bottom: 28px;
+    margin-bottom: 18px;
+  }
+}
+
 .logo-font-footer {
   display: inline-block;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .logo-font-footer {
     font-size: 24px;
     line-height: 1.17;
@@ -551,7 +584,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-addressBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -564,6 +597,14 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-addressBox {
+    margin-left: 61px;
+    margin-right: 165px;
+    width: 232px;
   }
 }
 
@@ -598,7 +639,7 @@ footer {
 }
 
 /* Отступы спика контактов футера UL */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-address-ul {
     padding: 0;
     display: -webkit-box;
@@ -611,6 +652,12 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-address-ul {
+    padding: 0;
   }
 }
 
@@ -628,32 +675,6 @@ footer {
 @media screen and (min-width: 769px) {
   .footer-address-list:not(:last-child) {
     margin-top: 9px;
-  }
-}
-
-/* Флекс бокс всего футера */
-.footer-flexBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 480px) {
-  .footer-flexBox {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .footer-flexBox {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    padding-bottom: 28px;
-    margin-bottom: 18px;
   }
 }
 

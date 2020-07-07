@@ -2,15 +2,33 @@
 
 // Стили секции Футер
 footer {
-  // height: 253px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+/* Флекс бокс всего футера */
+.footer-flexBox {
+  display: flex;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 769px) {
+    align-items: baseline;
+    padding-bottom: 28px;
+    margin-bottom: 18px;
+  }
 }
 
 // Стили Лого футера
 .logo-font-footer {
   display: inline-block;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 20px;
@@ -22,11 +40,17 @@ footer {
 }
 
 .footer-addressBox {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-left: 61px;
+    margin-right: 165px;
+    width: 232px;
   }
 }
 
@@ -62,11 +86,15 @@ footer {
 
 /* Отступы спика контактов футера UL */
 .footer-address-ul {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 0;
   }
 
   @media screen and (min-width: 769px) {
@@ -83,20 +111,6 @@ footer {
   }
 }
 
-/* Флекс бокс всего футера */
-.footer-flexBox {
-  display: flex;
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-  }
-
-  @media screen and (min-width: 769px) {
-    align-items: baseline;
-    padding-bottom: 28px;
-    margin-bottom: 18px;
-  }
-}
 /* Флекс бокс блока ссылок и заголовка=======Блок ссылок===== */
 .footerLinks-box {
   display: flex;
