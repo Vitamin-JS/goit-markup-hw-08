@@ -143,17 +143,19 @@ footer {
 /* Стили заголовков футера */
 .footer-title {
   margin-top: 0;
+  font-size: 14px;
+  line-height: 1.14;
 
   @media screen and (max-width: 480px) {
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
     font-weight: 500;
   }
 
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 769px) {
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 21px;
     display: block;
@@ -202,11 +204,16 @@ footer {
 /* Отступы поля форма футер === Блок Форма======== */
 /* Отступы блока Форма */
 .footerMail-box {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 769px) {
@@ -217,7 +224,7 @@ footer {
 .footer-form {
   display: flex;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
   }
@@ -236,7 +243,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   padding: 18px 12px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     width: 450px;
     margin-bottom: 20px;
   }
