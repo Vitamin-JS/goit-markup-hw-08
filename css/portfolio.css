@@ -382,7 +382,7 @@ header {
           justify-content: center;
   padding-left: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -392,6 +392,13 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .works-filter-ul {
+    margin-bottom: 20px;
   }
 }
 
@@ -444,7 +451,6 @@ header {
 .work-list {
   position: relative;
   margin-top: 30px;
-  width: calc((1170px - 60px) / 3);
   cursor: pointer;
   overflow: hidden;
   /* transition - одной строкой */
@@ -454,8 +460,17 @@ header {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-list:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 481px) {
+  .work-list:not(:nth-child(3n)) {
+    margin-right: 30px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .work-list {
+    width: calc((1170px - 60px) / 3);
+  }
 }
 
 /* Отступы заголовков Примеров работ */
@@ -471,6 +486,13 @@ header {
   padding-left: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .works-exampl-ul {
+    width: 450px;
+    margin-right: 0;
+  }
 }
 
 /* Свойства блока карточки товара  */
@@ -492,6 +514,12 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   z-index: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 450px;
+  }
 }
 
 /* Скрытый блок на карточке */
@@ -516,7 +544,12 @@ header {
   z-index: 0;
 }
 
-/* Бордеры и отступы контента карточек работ */
+@media screen and (max-width: 480px) {
+  .hidden-box {
+    width: 450px;
+  }
+}
+
 /* Текст в скрытом блоке на карточке */
 .card-hideText {
   font-size: 18px;
@@ -524,10 +557,16 @@ header {
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2196f3;
-  width: calc((1170px - 60px) / 3);
+  width: 450px;
   height: 294px;
   padding: 64px 24px 63px;
   margin: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .card-hideText {
+    width: calc((1170px - 60px) / 3);
+  }
 }
 
 /* Интерактивные действия с карточками  */
@@ -560,6 +599,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
