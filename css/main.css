@@ -510,6 +510,15 @@ body {
 /* Св-ва кнопки Закрыть Модального окна */
 .modal-close {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30px;
   height: 30px;
   border: none;
@@ -518,10 +527,19 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   right: 8px;
   top: 8px;
-  background-image: url(../images/images-for-modal/close-black.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-closeIcon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #000000;
+}
+
+.modal-close:hover .modal-closeIcon {
+  fill: #2196f3;
 }
 
 /* Св-ва заголовка Модального окна */
@@ -716,7 +734,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* Стили иконки чекбокса спана */
 /* Стили иконки Чекбокса при состоянии Чекд */
 .checkbox:checked + .checkbox-icon {
   background-color: #2196f3;
