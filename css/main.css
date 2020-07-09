@@ -434,22 +434,20 @@ body {
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
   z-index: 999;
-  /* Скрытие модалки */
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  /* Состояние окна формы при включенном is-hidden */
+  /* Скрытие модалки */
 }
 
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
           transform: translate(-50%, -50%) scale(0.9);
+  /* Состояние окна формы при включенном is-hidden */
 }
 
-/* Скрытие модалки */
-/* Состояние окна формы при включенном is-hidden */
 /* Стили окна формы */
 .modal {
   position: absolute;
@@ -464,22 +462,28 @@ body {
   left: 50%;
   max-height: 800px;
   min-height: 400px;
-  width: 528px;
+  width: 450px;
   padding: 40px;
   background-color: white;
+  /* Переход ======================================= */
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 200ms ease-in;
   transition: -webkit-transform 200ms ease-in;
   transition: transform 200ms ease-in;
   transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
-  /* Переход ======================================= */
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 /* Стили тега формы */
@@ -562,7 +566,6 @@ body {
 /* Анимация меток Label */
 .input-area:focus + .form-label,
 .input-area:not(:placeholder-shown) + .form-label {
-  /* transform: translateY(-40px); */
   -webkit-transform: translate(-26px, -40px);
           transform: translate(-26px, -40px);
   color: #2196f3;
