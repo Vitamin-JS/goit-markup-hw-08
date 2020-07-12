@@ -139,7 +139,7 @@ body {
   .logo-font {
     margin-top: 26px;
     margin-bottom: 26px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 }
 
@@ -153,6 +153,13 @@ body {
 /* Обнуление отступа <p>-лого  */
 .logo-position {
   margin: 0;
+  width: 141px;
+}
+
+@media screen and (min-width: 769px) {
+  .logo-position {
+    width: 153px;
+  }
 }
 
 /* Отступы Навигация контакты */
@@ -175,10 +182,13 @@ body {
 @media screen and (min-width: 769px) {
   .nav-contacts {
     margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
     padding: 0;
   }
   .nav-contacts > li:first-child {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -332,6 +342,22 @@ body {
 
 .mobile-menu-button.is-open .icon-menu {
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Нижний border хедера - важен для portfolio.html */
