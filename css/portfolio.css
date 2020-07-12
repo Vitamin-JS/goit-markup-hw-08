@@ -310,6 +310,30 @@ body {
   color: #2196f3;
 }
 
+.mobile-menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  margin-right: 5px;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu-button .icon-cross {
+  display: none;
+}
+
+.mobile-menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-menu-button.is-open .icon-menu {
+  display: none;
+}
+
 /* Нижний border хедера - важен для portfolio.html */
 header {
   max-width: 1600px;

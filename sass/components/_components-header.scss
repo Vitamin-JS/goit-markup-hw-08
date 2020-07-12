@@ -155,3 +155,25 @@
 .current {
   color: $accent-color-blue;
 }
+
+.mobile-menu-button {
+  display: inline-flex;
+  margin: 0;
+  margin-right: 5px;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
