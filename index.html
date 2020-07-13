@@ -24,7 +24,7 @@
             <b><span class="logo-blue">Web</span> Studio</b>
           </p>
         </a>
-        <div class="menu-container">
+        <div class="menu-container" id="menu-container" data-menu>
           <nav>
             <ul class="header-menu">
               <li class="nav-list">
@@ -57,16 +57,13 @@
           </ul>
         </div>
         
-        <button type="button" class="mobile-menu-button" aria-expanded="false" data-menu-button > 
+        <button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button > 
         <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
           <use class="icon-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
           <use class="icon-cross" href="./images/sprite.svg#icon-mobile-close"></use>
         </svg>
         </button>
- 
       </div>
-
-
     </header>
     <main>
 
