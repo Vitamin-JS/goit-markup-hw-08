@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    
     <!-- ---------------Шапка сайта с навигацией------------------------ -->
     <header>
       <div class="container navBox-contacts">
@@ -31,24 +30,30 @@
                 <a href="" class="logo nav-font hover-text current">Студия</a>
               </li>
               <li class="nav-list">
-                <a href="./portfolio.html" class="logo nav-font hover-text">Портфолио</a>
+                <a href="./portfolio.html" class="logo nav-font hover-text"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav-list">
                 <a href="" class="logo nav-font hover-text">Контакты</a>
               </li>
             </ul>
           </nav>
-          
+
           <ul class="nav-contacts">
             <li>
-              <a href="mailto:info@devstudio.com" class="contacts nav-font hover-text"><svg class="decoration">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts nav-font hover-text"
+                ><svg class="decoration">
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
                 <span>info@devstudio.com</span>
               </a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="contacts nav-font hover-text"><svg class="decoration">
+              <a href="tel:+380961111111" class="contacts nav-font hover-text"
+                ><svg class="decoration">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
                 <span>+38 096 111 11 11</span>
@@ -56,17 +61,32 @@
             </li>
           </ul>
         </div>
-        
-        <button type="button" class="mobile-menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button > 
-        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-          <use class="icon-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
-          <use class="icon-cross" href="./images/sprite.svg#icon-mobile-close"></use>
-        </svg>
+
+        <button
+          type="button"
+          class="mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-mobile-menu"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-mobile-close"
+            ></use>
+          </svg>
         </button>
       </div>
     </header>
     <main>
-
       <!-- -------------------------------Герой------------------------------------------ -->
       <section class="hero">
         <!--   class="footer-bg"    -->
@@ -76,65 +96,104 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
         <!-- -----------------------------------------Модальное окно Героя----------- -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form action="" class="form">
               <button type="button" class="modal-close" data-modal-close>
-                <svg  class="modal-closeIcon" width="18px" height="18px"> 
-                  <use href="./images/images-for-modal/sprite-modal.svg#icon-close-black">
-                </use>
+                <svg class="modal-closeIcon" width="18px" height="18px">
+                  <use
+                    href="./images/images-for-modal/sprite-modal.svg#icon-close-black"
+                  ></use>
                 </svg>
               </button>
-              <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+              <h2 class="modal-title">
+                Оставьте свои данные, мы вам перезвоним
+              </h2>
               <!-- -----Поле Имя--------- -->
               <div class="form-field">
-                <input class="input-area" type="text" name="first-name" id="name" placeholder=" ">
+                <input
+                  class="input-area"
+                  type="text"
+                  name="first-name"
+                  id="name"
+                  placeholder=" "
+                />
                 <label class="form-label" for="name">Имя</label>
                 <span>
                   <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/images-for-modal/sprite-modal.svg#icon-person-black"></use>
-                 </svg>
-              </span> 
+                    <use
+                      href="./images/images-for-modal/sprite-modal.svg#icon-person-black"
+                    ></use>
+                  </svg>
+                </span>
               </div>
               <!-- -----Поле Телефон--------- -->
               <div class="form-field">
-                <input class="input-area" type="tel" name="phone" id="phone" placeholder=" ">
+                <input
+                  class="input-area"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder=" "
+                />
                 <label class="form-label" for="phone">Телефон</label>
                 <span>
                   <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/images-for-modal/sprite-modal.svg#icon-phone-black"></use>
+                    <use
+                      href="./images/images-for-modal/sprite-modal.svg#icon-phone-black"
+                    ></use>
                   </svg>
                 </span>
               </div>
               <!-- -----Поле e-mail--------- -->
               <div class="form-field">
-                <input class="input-area" type="email" name="email" id="mail" placeholder=" ">
+                <input
+                  class="input-area"
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder=" "
+                />
                 <label class="form-label" for="mail">Почта</label>
                 <span>
                   <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/images-for-modal/sprite-modal.svg#icon-email-black"></use>
+                    <use
+                      href="./images/images-for-modal/sprite-modal.svg#icon-email-black"
+                    ></use>
                   </svg>
                 </span>
               </div>
               <!-- -----Поле Комментарий--------- -->
               <div class="form-comment">
-                <textarea class="comment" name="comment" id="coment" cols="30" rows="7" placeholder=" "></textarea>
+                <textarea
+                  class="comment"
+                  name="comment"
+                  id="coment"
+                  cols="30"
+                  rows="7"
+                  placeholder=" "
+                ></textarea>
                 <label class="comment-label" for="coment">Комментарий</label>
               </div>
               <!-- -----Поле Чекбокс Условия договора--------- -->
               <div class="policy-field">
-                
-                <label class="policy-text" >
-                  <input class="checkbox" type="checkbox" name="policy" value="accept-policy">
-                  <span class="checkbox-icon"> </span>Соглашаюсь с рассылкой и принимаю <span class="space">-</span>
-                    <a href="" class="policy-link">Условия договора</a>
-                  
+                <label class="policy-text">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="policy"
+                    value="accept-policy"
+                  />
+                  <span class="checkbox-icon"> </span>Соглашаюсь с рассылкой и
+                  принимаю <span class="space">-</span>
+                  <a href="" class="policy-link">Условия договора</a>
                 </label>
               </div>
-              
             </form>
             <button class="modal-button" type="submit">Отправить</button>
           </div>
@@ -247,18 +306,14 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44" height="44">
-                      <use
-                        href="./images/sprite.svg#icon-team-instagram"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="social-links"
                     ><svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-twitter"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -272,9 +327,7 @@
                       width="44px"
                       height="44px"
                     >
-                      <use
-                        href="./images/sprite.svg#icon-team-facebook"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -285,9 +338,7 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-linkedin"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -309,18 +360,14 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-instagram"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="social-links"
                     ><svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-twitter"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -334,9 +381,7 @@
                       width="44px"
                       height="44px"
                     >
-                      <use
-                        href="./images/sprite.svg#icon-team-facebook"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -347,9 +392,7 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-linkedin"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -371,18 +414,14 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-instagram"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="social-links"
                     ><svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-twitter"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -396,9 +435,7 @@
                       width="44px"
                       height="44px"
                     >
-                      <use
-                        href="./images/sprite.svg#icon-team-facebook"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -409,9 +446,7 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-linkedin"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -433,18 +468,14 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-instagram"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" aria-label="Ссылка на Twitter" class="social-links"
                     ><svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-twitter"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -458,9 +489,7 @@
                       width="44px"
                       height="44px"
                     >
-                      <use
-                        href="./images/sprite.svg#icon-team-facebook"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -471,9 +500,7 @@
                     class="social-links"
                   >
                     <svg class="team-links" width="44px" height="44px">
-                      <use
-                        href="./images/sprite.svg#icon-team-linkedin"
-                      ></use>
+                      <use href="./images/sprite.svg#icon-team-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -491,54 +518,42 @@
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-1" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_1"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-2" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_2"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-3" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_3"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-4" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_4"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-5" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_5"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list">
               <a href="" class="clients-link"
                 ><svg class="icon-client company-6" width="170" height="90">
-                  <use
-                    href="./images/sprite.svg#icon-Client_6"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-Client_6"></use>
                 </svg>
               </a>
             </li>
@@ -595,9 +610,7 @@
                 aria-label=" Ссылка на Instagram"
                 class="footerSocialLinks"
                 ><svg class="footer-icons" width="20" height="20">
-                  <use
-                    href="./images/sprite.svg#icon-footer-instagram"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-footer-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -617,9 +630,7 @@
                 aria-label=" Ссылка на Facebook"
                 class="footerSocialLinks"
                 ><svg class="footer-icons" width="20" height="20">
-                  <use
-                    href="./images/sprite.svg#icon-footer-facebook"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-footer-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -629,9 +640,7 @@
                 aria-label=" Ссылка на LinkedIn"
                 class="footerSocialLinks"
                 ><svg class="footer-icons" width="20" height="20">
-                  <use
-                    href="./images/sprite.svg#icon-footer-linkedin"
-                  ></use>
+                  <use href="./images/sprite.svg#icon-footer-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -654,8 +663,9 @@
         </div>
       </div>
     </footer>
+    <!--  JS для работы модального окна Героя -->
     <script src="./js/modal.js"></script>
+    <!--  JS для работы меню хедера в мобильной версии -->
     <script src="./js/menu.js"></script>
-    </body>
   </body>
 </html>
