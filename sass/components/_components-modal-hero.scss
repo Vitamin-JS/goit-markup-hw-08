@@ -294,3 +294,8 @@ textarea {
   background-origin: border-box;
   background-position: center;
 }
+
+// Блокирует прокрутку Body при открытом модальном окне
+body.modal-open {
+  overflow: hidden;
+}
